@@ -1,0 +1,8 @@
+<h1> Lista De Calificaciones</h1>
+<hr>
+
+<ul> <br>
+    <li class="lista" [ngStyle]="{backgroundColor: alumno.aprobado ? 'green' : 'red'}" *ngFor="let alumno of alumnos">
+        {{alumno.nombre | uppercase}} - {{alumno.apellido | uppercase}} - {{alumno.fechaInscripcion | date}} <br> <br>
+    </li>
+</ul>
